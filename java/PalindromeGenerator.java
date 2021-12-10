@@ -15,7 +15,7 @@ public class PalindromeGenerator {
 
     final String[] lowercase = "abcdefghijklmnopqrstuvwxyz".split("");
 
-    public String solution(int totalLength, int uniqueChars) {
+    public String generate(int totalLength, int uniqueChars) {
 
         // Random Number Generator
         final Random random = new Random(uniqueChars);
@@ -65,13 +65,13 @@ public class PalindromeGenerator {
 
     public static void main(String[] args) {
         PalindromeGenerator palindrome = new PalindromeGenerator();
-        System.out.println(palindrome.solution(5, 2));
-        System.out.println(palindrome.solution(6, 2));
-        System.out.println(palindrome.solution(7, 2));
-        System.out.println(palindrome.solution(8, 3));
-        System.out.println(palindrome.solution(9, 5));
-        System.out.println(palindrome.solution(23, 12));
-        System.out.println(palindrome.solution(101, 26));
-        System.out.println(palindrome.solution(5, 4)); // Will not have 4 uniqe chars in string of length 5 which is a palindrome
+        System.out.println(palindrome.generate(5, 2));
+        System.out.println(palindrome.generate(6, 2));
+        System.out.println(palindrome.generate(7, 2));
+        System.out.println(palindrome.generate(8, 3));
+        System.out.println(palindrome.generate(9, 5));
+        System.out.println(palindrome.generate(23, 12));
+        System.out.println(palindrome.generate(101, 26));
+        System.out.println(palindrome.generate(5, 4)); // Will not have 4 uniqe chars in string of length 5 which is a palindrome
     }
 }
